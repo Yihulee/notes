@@ -1,4 +1,4 @@
-博文来自[boost::any的用法、优点和缺点以及源代码分析](http://blog.csdn.net/hityct1/article/details/4186962)],做了一部分补充。
+博文来自[boost::any的用法、优点和缺点以及源代码分析](http://blog.csdn.net/hityct1/article/details/4186962),做了一部分补充。
 
 ## `boost::any`用法示例:
 
