@@ -213,8 +213,7 @@ template<typename ValueType>
 	ValueType* any_case(const any* operand) // 这个函数十分重要
 	{
 		// 如果传入any类型的指针，那就传回ValueType类型的指针
-		assert(operand->type() == typeid(ValueType)); // 判断类型是否一致
-		return &static_cast<any::holder<ValueType> *>(operand->content)->held; // 返回指针
+  		return operand && operand->type() == typeid(ValueType) ?  &static_cast<any::holder<ValueType> *>(operand->content)->held : 0; // 返回指针或者为空
 	}
 
 	//下代码是使用示例

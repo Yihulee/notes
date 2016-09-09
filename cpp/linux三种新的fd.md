@@ -120,10 +120,10 @@ timerfd_settime(timer_id, 0, &ptime_internal, NULL);
 //其他操作
 ```
 
-**3)** eventfd
+**3)** `eventfd`
 
 ```c
-#include   
+#include <sys/eventfd.h>
 int eventfd(unsigned int initval, int flags);  
 ```
 
